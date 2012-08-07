@@ -1,9 +1,16 @@
 body {width: 800px;
+	font-family: Arial, Helvetica;
 	border: 2px solid blue;
 	border-radius: 25px;
-	margin: 10px auto auto;}
+	margin: 10px auto;}
+
+#navWrapper {text-align: center;
+				width: 726px;
+				margin: 20px auto;}
 	
-.navButtonv {list-style-type: none;
-			width: 200px;
-			margin: 10px auto auto;
-			float: center;}
+.navButton {text-align: center;
+			width: 220px;
+			margin-left: 20px;
+			padding: 10px 0px 10px 0px;
+			float: left;
+			border: 1px solid blue;}
