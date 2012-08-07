@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Extremely basic example of the W3C Geolocation API</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<script type="text/javascript">
+var gl;
+ 
+function displayPosition(position) {
+  var p = document.getElementById("p");
+  p.innerHTML = "<table border='1'><tr><th>Timestamp</th><td>" + position.timestamp +
+  "<tr><th>Latitude (WGS84)</th><td>" + position.coords.latitude + " deg</td></tr>" +
+  "<tr><th>Longitude (WGS84)</th><td>" + position.coords.longitude + " deg</td></tr></table>";
+}
+ 
+function displayError(positionError) {
+  alert(positionError);
+}
+ 
+try {
+  if (typeof navigator.geolocation === 'undefined'){
+    gl = google.gears.factory.create('beta.geolocation');
+  } else {
+    gl = navigator.geolocation;
+  }
+} catch(e) {}
+ 
+if (gl) {
+  gl.getCurrentPosition(displayPosition, displayError);
+} else {
+  alert("Geolocation services are not supported by your web browser.");
+}
+</script>
+
+</head>
+<body>
+<div id="p"></div>
+</body>
+</html>
