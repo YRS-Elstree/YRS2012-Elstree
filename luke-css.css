@@ -4,6 +4,19 @@ body {width: 800px;
 	border-radius: 25px;
 	margin: 10px auto;}
 
+a {color: black;
+	text-decoration: none;}
+	
+a:hover {color: black;
+	text-decoration: none;}
+	
+a:active {color: black;
+	text-decoration: none;
+	font-weight: bold;}
+	
+a:visited {color: black;
+	text-decoration: none;}
+	
 #navWrapper {text-align: center;
 				width: 726px;
 				margin: 20px auto;}
