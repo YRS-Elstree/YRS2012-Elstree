@@ -3,7 +3,7 @@ body {width: 800px;
 	border-radius: 25px;
 	margin: 10px auto auto;}
 	
-.navButtonv {
+.navButtonv {list-style-type: none;
 			width: 200px;
 			margin: 10px auto auto;
 			float: center;}
