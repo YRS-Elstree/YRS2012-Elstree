@@ -1,0 +1,22 @@
+[
+    {
+        "category": "other-theft", 
+        "location_type": "Force", 
+        "persistent_id": "38c1343f22ae8b609702e61c019c437f85e960b6ddce191690342ea98cca3092", 
+        "month": "2012-02", 
+        "location": {
+            "latitude": 52.64395048674031, 
+            "street": {
+                "id": 884227, 
+                "name": "On or near Abbey Gate"
+            }, 
+            "longitude": -1.1430419093111825
+        }, 
+        "context": "", 
+        "id": 10468694, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-02"
+        }
+    }
+]

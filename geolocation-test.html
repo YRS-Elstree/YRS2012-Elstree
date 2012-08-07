@@ -4,6 +4,7 @@
 <head>
 <title>Extremely basic example of the W3C Geolocation API</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript">
 var gl;
  
@@ -12,31 +13,45 @@ function displayPosition(position) {
   p.innerHTML = "<table border='1'><tr><th>Timestamp</th><td>" + position.timestamp +
   "<tr><th>Latitude (WGS84)</th><td>" + position.coords.latitude + " deg</td></tr>" +
   "<tr><th>Longitude (WGS84)</th><td>" + position.coords.longitude + " deg</td></tr></table>";
+  
+  lookUpRegion(position);
 }
  
 function displayError(positionError) {
   alert(positionError);
 }
- 
+
+function lookUpRegion(position){
+	var url = "http://mapit.mysociety.org/point/4326/"+ position.coords.longitude+","+position.coords.latitude;
+	console.log(url);
+	$.ajax(url, {
+		success:
+			function (data, status){
+				console.log(data);
+				for(var key in data){
+					if(data[key].type_name == "District council ward"){
+						console.log(data[key].name);
+						$("#location").text(data[key].name);
+					}
+					
+				}
+			}
+	});
+}
+
 try {
   if (typeof navigator.geolocation === 'undefined'){
-    gl = google.gears.factory.create('beta.geolocation');
+    alert("Your're browser doesn't support this app!");
   } else {
-    gl = navigator.geolocation;
+    navigator.geolocation.getCurrentPosition(displayPosition, displayError);
   }
 } catch(e) {}
- 
-if (gl) {
-  gl.getCurrentPosition(displayPosition, displayError);
-} else {
-  alert("Geolocation services are not supported by your web browser.");
-}
+
 </script>
 
 </head>
 <body>
-<p>We definately did not copy / steal this. 100% our own work. Yup. No lies.</p>
-<div id="p"></div>
-<p>We definately did not copy / steal this. 100% our own work. Yup. No lies.</p>
+	<div id="p"></div>
+	<p>You are in <span id="location"></span></p>
 </body>
 </html>
