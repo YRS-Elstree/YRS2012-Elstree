@@ -2,10 +2,41 @@
 <html>
   <head>
     <title>James Was here!</title>
+    <script type="text/javascript" src="static/jquery-1.7.2.min.js"></script>
+    <style>
+       .boring {
+
+       }
+
+       .interesting {
+           font-size: 78pt;
+       }
+
+    </style>
   </head>
 
   <body>
     <h1>This is James' Web Page</h1>
-  </body>
+
+    <h1 id="bob">nothing here</h1>
+<h2 id="adam">    my webpage             </h2>
+<h3   id="aromal">  aromal </h3>
+    
+<script>
+       $(document).ready(function() {
+           // do stuff when DOM is ready
+           $('#bob').text("hi there");
+                 $ ('#adam').text ("els tree");
+$('#aromal').text("sindu shaj");
+ $("#james").click(function() { alert("you clicked");});
+
+       });
+      
+      
+    </script>
+ 
+<p id="james" class="interesting"> <b> attacking someone is a crime you will me arrested for it with the law .    </b>        </p>
+                      <p> <u> click above </u>   </p>
+ </body>
 </html>
 
