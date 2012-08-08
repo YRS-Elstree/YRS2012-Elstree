@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Extremely basic example of the W3C Geolocation API</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+function onKnownPosition(position) {
+  updatePositionTable(position);
+  locateRegionFor(position.coords);
+}
+
+function updatePositionTable(position) {
+    $("timestamp").text(position.timestamp);
+    $("latitude").text(position.coords.latitude);
+    $("longitude").text(position.coords.longitude);
+}
+ 
+function onPositionError(positionError) {
+  alert(positionError);
+}
+
+function lookUpRegion(coords){
+	var url = "http://mapit.mysociety.org/point/4326/"+ coords.longitude+","+ coords.latitude;
+	console.log(url);
+	$.ajax(url, {
+		success:
+			function (data, status){
+				console.log(data);
+                                $("response").text(JSON.stringify(data, null, 4));
+
+				for(var key in data){
+					if(data[key].type_name == "District council ward"){
+						console.log(data[key].name);
+						$("#location").text(data[key].name);
+					}
+					
+				}
+			}
+	});
+}
+
+try {
+  if (typeof navigator.geolocation === 'undefined'){
+    alert("Your're browser doesn't support this app!");
+  } else {
+    navigator.geolocation.getCurrentPosition(onKnownPosition, onPositionError);
+  }
+} catch(e) {}
+
+</script>
+
+</head>
+<body>
+	<div id="p">
+	  <table>
+	    <tbody>
+	      <tr>
+		<td>Timestamp</td>		
+		<td id="timestamp"></td>
+	      </tr>
+	      <tr>
+		<td>Latitude</td>
+		<td id="latitude"></td>
+	      </tr>
+	      <tr>
+		<td>Longitude</td>
+		<td id="longitude"></td>
+	      </tr>
+	    </tbody>
+	</div>
+	<p>You are in <span id="location"></span></p>
+	<p id="response"></p>
+</body>
+</html>
