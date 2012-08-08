@@ -6,7 +6,9 @@
 <title>Reverse Geocoding</title> 
 
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> 
-<script type="text/javascript"> 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="geolocation.js"></script>
+<!--<script type="text/javascript"> 
   var geocoder;
 
   if (navigator.geolocation) {
@@ -39,6 +41,7 @@ function errorFunction(){
         if (results[1]) {
          //formatted address
          alert(results[0].formatted_address)
+		
         //find country name
              for (var i=0; i<results[0].address_components.length; i++) {
             for (var b=0;b<results[0].address_components[i].types.length;b++) {
@@ -53,8 +56,10 @@ function errorFunction(){
         }
         //city data
         alert(city.short_name + " " + city.long_name)
-
-
+		
+		$("#output").text(results[2].formatted_address);
+		console.log(results[2].formatted_address);
+		
         } else {
           alert("No results found");
         }
@@ -63,9 +68,9 @@ function errorFunction(){
       }
     });
   }
-</script> 
+</script> -->
 </head> 
-<body onload="initialize()"> 
-
+<body onload="startHere()"> 
+	<div id="output"></div>
 </body> 
 </html>
