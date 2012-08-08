@@ -6,13 +6,16 @@ function startHere(){
 	}
 }
 
-function errorFunction(position){
-	alert("GeoLocation failed for whatever reason :/ Sorry.");
+function errorFunction(positionError){
+	console.log(positionError.code);
+	console.log(positionError.message);
 }
 
 function successFunction(position){
 	var lat = position.coords.latitude;
 	var lng = position.coords.longitude;
+	
+	startDataStuff(position);
 	
 	displayAddress(lat, lng);
 }

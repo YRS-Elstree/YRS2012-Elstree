@@ -1,6 +1,5 @@
-function startDataStuff(){	
-	//var url = "http://policeapi2.rkh.co.uk/api/crimes-street/all-crime?date=2012-06&lat=51.6448352&lng=-0.2980985"
-	var url = "http://yrs.time4tea.net/sample-data/crimes-elstree-2012-06.json";
+function startDataStuff(position){	
+	var url = "/api/crimes-street/all-crime?date=2012-06&lat="+position.coords.latitude+"&lng="+position.coords.longitude;
 	$.ajax(url, {
 		username: "ficah53",
 		password: "5d5faaa7ba76287f305755bbfe626dc7",
