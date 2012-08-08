@@ -1,9 +1,12 @@
-function startHere(){
-	if(navigator.geolocation){
-		navigator.geolocation.getCurrentPosition(successFunction, errorFunction, {enableHighAccuracy: true });
-	}else{
-		alert("Please enable GeoLocation");
-	}
+function startHere() {
+    if (navigator.geolocation) {
+        navigator.geolocation.watchPosition(successFunction, errorFunction, {
+            enableHighAccuracy:true,
+            maximumAge:5 * 60 * 1000
+        });
+    } else {
+        alert("Please enable GeoLocation");
+    }
 }
 
 function errorFunction(positionError){
