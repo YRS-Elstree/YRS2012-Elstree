@@ -1,65 +1,131 @@
-
 <html>
 <head>
-<title>crimeviewer</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="geolocation.js"></script>
-<script type="text/javascript" src="dataJS.js"></script>
+    <title>crimeviewer</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="geolocation.js"></script>
+    <script type="text/javascript" src="dataJS.js"></script>
+    <style type="text/css">
+        <!--
+        body {
+            background-image: url(images/bg.jpg);
+            background-repeat: repeat;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+
+        .location {
+            color: #06C;
+            font-size: 20px;
+            font-style: italic;
+        }
+        -->
+    </style>
 </head>
+
 <body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 <!-- Save for Web Slices (crimeviewer.psd) -->
-<table id="Table_01" width="321" height="461" border="0" cellpadding="0" cellspacing="0">
-	<tr>
-		<td colspan="3">
-			<img src="images/index_01.gif" width="321" height="74" alt=""></td>
-	</tr>
-	<tr>
-		<td colspan="3">
-			<img src="images/index_02.gif" width="321" height="22" alt=""></td>
-	</tr>
-	<tr>
-		<td rowspan="2">
-			<img src="images/index_03.gif" width="22" height="365" alt=""></td>
-		<td>
-			<table width="275" height="273" border="0" background="images/index_04.jpg" cellspacing="0" cellpadding="0">
-			  <tr>
-			    <td>In <span id='placename'> Elstree, Hertfordshire</span> during the past month, there have been <span id='crimecount'>1000</span> crimes. The most frequent crime was murder. There were 158 arrests for this crime in July. Despite this there were not many arrests for fraud. <a href="">Want to know more?</a></td>
-		      </tr>
-		  </table></td>
-		<td rowspan="2">
-			<img src="images/index_05.gif" width="24" height="365" alt=""></td>
-	</tr>
-	<tr>
-		<td>
-			<img src="images/index_06.gif" width="275" height="92" alt=""></td>
-	</tr>
-</table>
-<!-- End Save for Web Slices -->
+<table width="322" height="385" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+    <tr>
+        <td colspan="6">
+            <img src="images/crimeviewer_01.png" width="321" height="9" alt=""></td>
+        <td>
+            <img src="images/spacer.gif" width="1" height="9" alt=""></td>
+    </tr>
+    <tr>
+        <td colspan="2" rowspan="2">
+            <img src="images/crimeviewer_02.png" width="27" height="23" alt=""></td>
+        <td>
+            <img src="images/crimeviewer_03.png" width="100%" height="9" alt=""></td>
+        <td colspan="3">
+            <img src="images/crimeviewer_04.png" width="141" height="9" alt=""></td>
+        <td>
+            <img src="images/spacer.gif" width="1" height="9" alt=""></td>
+    </tr>
+    <tr>
+        <td colspan="2" rowspan="3">
+            <table width="267" height="257" bgcolor="#FFFFFF" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td valign="top">
+                        <p>In
+                            <span class="location" id='placename'> Elstree, Hertfordshire</span>
+                            during the past month, there have been
+                            <span id='crimecount'><b>1000</b></span>
+                            crimes. <br>
+                        <br>
+                        The most frequent crime was <b>murder</b>. There were <b>158</b> arrests for this crime in
+                            <span class="location">July</span>.
+                            Despite this there were not many arrests for <b>fraud</b>.
+                    </p>
 
+                        <p><a href="">Want to know more?</a></p></td>
+                </tr>
+            </table>
+        </td>
+        <td colspan="2">
+            <img src="images/crimeviewer_06.png" width="27" height="14" alt=""></td>
+        <td>
+            <img src="images/spacer.gif" width="1" height="14" alt=""></td>
+    </tr>
+    <tr>
+        <td rowspan="4">
+            <img src="images/crimeviewer_07.png" width="13" height="353" alt=""></td>
+        <td>
+            <img src="images/crimeviewer_08.png" width="14" height="100%" alt=""></td>
+        <td>
+            <img src="images/crimeviewer_09.png" width="17" height="100%" alt=""></td>
+        <td rowspan="4">
+            <img src="images/crimeviewer_10.png" width="10" height="353" alt=""></td>
+        <td>
+            <img src="images/spacer.gif" width="1" height="235" alt=""></td>
+    </tr>
+    <tr>
+        <td rowspan="3">
+            <img src="images/crimeviewer_11.png" width="14" height="118" alt=""></td>
+        <td rowspan="3">
+            <img src="images/crimeviewer_12.png" width="17" height="118" alt=""></td>
+        <td>
+            <img src="images/spacer.gif" width="1" height="8" alt=""></td>
+    </tr>
+    <tr>
+        <td>
+            <img src="images/crimeviewer_13.png" width="100%" height="47" alt=""></td>
+        <td rowspan="2">
+            <img src="images/crimeviewer_14.png" width="114" height="110" alt=""></td>
+        <td>
+            <img src="images/spacer.gif" width="1" height="47" alt=""></td>
+    </tr>
+    <tr>
+        <td>
+            <img src="images/crimeviewer_15.png" width="153" height="63" alt=""></td>
+        <td>
+            <img src="images/spacer.gif" width="1" height="63" alt=""></td>
+    </tr>
+</table>
 <script type="text/javascript">
-	$(document).ready(function() {
-		startHere();
-	});
+    $(document).ready(function () {
+        startHere();
+    });
 </script>
 
 <script type="text/javascript">
-  var GoSquared = {};
-  GoSquared.acct = "GSN-955045-I";
-  (function(w){
-    function gs(){
-      w._gstc_lt = +new Date;
-      var d = document, g = d.createElement("script");
-      g.type = "text/javascript";
-      g.src = "//d1l6p2sc9645hc.cloudfront.net/tracker.js";
-      var s = d.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(g, s);
-    }
-    w.addEventListener ?
-      w.addEventListener("load", gs, false) :
-      w.attachEvent("onload", gs);
-  })(window);
+    var GoSquared = {};
+    GoSquared.acct = "GSN-955045-I";
+    (function (w) {
+        function gs() {
+            w._gstc_lt = +new Date;
+            var d = document, g = d.createElement("script");
+            g.type = "text/javascript";
+            g.src = "//d1l6p2sc9645hc.cloudfront.net/tracker.js";
+            var s = d.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(g, s);
+        }
+
+        w.addEventListener ?
+                w.addEventListener("load", gs, false) :
+                w.attachEvent("onload", gs);
+    })(window);
 </script>
 </body>
 </html>
