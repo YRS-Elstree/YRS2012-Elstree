@@ -25,7 +25,8 @@ function displayAddress(lat, lng){
 			alert("We could not determine your position");
 		}else{
 			if(results[3]){
-				$("#output").text(results[2].formatted_address);
+				$("#placename").text(results[2].formatted_address);
+				console.log(results[2].formatted_address);
 			}
 		}
 	});
