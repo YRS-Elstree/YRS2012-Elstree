@@ -1,6 +1,6 @@
 function startHere(){
 	if(navigator.geolocation){
-		navigator.geolocation.getCurrentPosition(successFunction, errorFunction);
+		navigator.geolocation.getCurrentPosition(successFunction, errorFunction, {enableHighAccuracy: true });
 	}else{
 		alert("Please enable GeoLocation");
 	}
