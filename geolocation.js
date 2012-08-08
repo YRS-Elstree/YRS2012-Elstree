@@ -6,13 +6,16 @@ function startHere(){
 	}
 }
 
-function errorFunction(position){
-	alert("GeoLocation failed for whatever reason :/ Sorry.");
+function errorFunction(positionError){
+	console.log(positionError.code);
+	console.log(positionError.message);
 }
 
 function successFunction(position){
 	var lat = position.coords.latitude;
 	var lng = position.coords.longitude;
+	
+	startDataStuff(position);
 	
 	displayAddress(lat, lng);
 }
@@ -25,7 +28,8 @@ function displayAddress(lat, lng){
 			alert("We could not determine your position");
 		}else{
 			if(results[3]){
-				$("#output").text(results[2].formatted_address);
+				$("#placename").text(results[2].formatted_address);
+				console.log(results[2].formatted_address);
 			}
 		}
 	});

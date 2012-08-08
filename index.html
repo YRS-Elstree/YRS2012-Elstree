@@ -1,7 +1,12 @@
+
 <html>
 <head>
 <title>crimeviewer</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="geolocation.js"></script>
+<script type="text/javascript" src="dataJS.js"></script>
 </head>
 <body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 <!-- Save for Web Slices (crimeviewer.psd) -->
@@ -20,7 +25,7 @@
 		<td>
 			<table width="275" height="273" border="0" background="images/index_04.jpg" cellspacing="0" cellpadding="0">
 			  <tr>
-			    <td>&nbsp;</td>
+			    <td>In <span id='placename'> Elstree, Hertfordshire</span> during the past month, there have been <span id='crimecount'>1000</span> crimes. The most frequent crime was murder. There were 158 arrests for this crime in July. Despite this there were not many arrests for fraud. <a href="">Want to know more?</a></td>
 		      </tr>
 		  </table></td>
 		<td rowspan="2">
@@ -32,5 +37,29 @@
 	</tr>
 </table>
 <!-- End Save for Web Slices -->
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		startHere();
+	});
+</script>
+
+<script type="text/javascript">
+  var GoSquared = {};
+  GoSquared.acct = "GSN-955045-I";
+  (function(w){
+    function gs(){
+      w._gstc_lt = +new Date;
+      var d = document, g = d.createElement("script");
+      g.type = "text/javascript";
+      g.src = "//d1l6p2sc9645hc.cloudfront.net/tracker.js";
+      var s = d.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(g, s);
+    }
+    w.addEventListener ?
+      w.addEventListener("load", gs, false) :
+      w.attachEvent("onload", gs);
+  })(window);
+</script>
 </body>
 </html>

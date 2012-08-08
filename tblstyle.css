@@ -1,0 +1,27 @@
+body{ background-color: white;
+	color:black;
+	font-family: "Arial" }
+.a {
+background-color: #FF0000;
+font-weight: bold;
+font-size: 13px;
+text-align: center;
+}
+.b {
+background-color: #FF5500;
+font-weight: bold;
+font-size: 13px;
+text-align: center;
+}
+.c {
+background-color: #FFFC00;
+font-weight: bold;
+font-size: 13px;
+text-align: center;
+}
+.d {
+background-color: #26FF00;
+font-weight: bold;
+font-size: 13px;
+text-align: center;
+}
