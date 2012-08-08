@@ -1,0 +1,1182 @@
+[
+    {
+        "category": "anti-social-behaviour", 
+        "location_type": "Force", 
+        "persistent_id": "f2c8b285c81c54aa85129725aa9e9e6e114c7d980992c974d15fe16629cfde7b", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6542168", 
+            "street": {
+                "id": 790158, 
+                "name": "On or near Parking Area"
+            }, 
+            "longitude": "-0.2805729"
+        }, 
+        "context": "", 
+        "id": 14219688, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "vehicle-crime", 
+        "location_type": "Force", 
+        "persistent_id": "ef99320de270387eebb9519cccb8861f718c6f41836b933ef99a0db1bc057481", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6542168", 
+            "street": {
+                "id": 790158, 
+                "name": "On or near Parking Area"
+            }, 
+            "longitude": "-0.2805729"
+        }, 
+        "context": "", 
+        "id": 14226762, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "criminal-damage-arson", 
+        "location_type": "Force", 
+        "persistent_id": "9f2865f68acc8b6350a947eeb52d40adb4e6e603abf4faf1ac6a75bfc6fd4f30", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6542168", 
+            "street": {
+                "id": 790158, 
+                "name": "On or near Parking Area"
+            }, 
+            "longitude": "-0.2805729"
+        }, 
+        "context": "", 
+        "id": 14230425, 
+        "outcome_status": {
+            "category": "No further action at this time", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "drugs", 
+        "location_type": "Force", 
+        "persistent_id": "4398830fd925de89d074ca3a6623c9851ea7b25e09da9a580f767c200525109c", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6542168", 
+            "street": {
+                "id": 790158, 
+                "name": "On or near Parking Area"
+            }, 
+            "longitude": "-0.2805729"
+        }, 
+        "context": "", 
+        "id": 14228683, 
+        "outcome_status": {
+            "category": "Offender given a caution", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "drugs", 
+        "location_type": "Force", 
+        "persistent_id": "b594a775cf66a8f0a1a95fcbf76e793324d247c74f59abb41c33d80638920048", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6542168", 
+            "street": {
+                "id": 790158, 
+                "name": "On or near Parking Area"
+            }, 
+            "longitude": "-0.2805729"
+        }, 
+        "context": "", 
+        "id": 14228685, 
+        "outcome_status": {
+            "category": "Awaiting court outcome", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "criminal-damage-arson", 
+        "location_type": "Force", 
+        "persistent_id": "27556ac8dafb02f17cfc05d9c957892ce00cd7839553d10cb5631f1adac14c48", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6541763", 
+            "street": {
+                "id": 790159, 
+                "name": "On or near Links Drive"
+            }, 
+            "longitude": "-0.2845644"
+        }, 
+        "context": "", 
+        "id": 14230843, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "burglary", 
+        "location_type": "Force", 
+        "persistent_id": "42359f9150372aae4b76fad41d4e31f5a37e2b80454e1b4fc71c250e7b054c45", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6478842", 
+            "street": {
+                "id": 789087, 
+                "name": "On or near The Rise"
+            }, 
+            "longitude": "-0.2835010"
+        }, 
+        "context": "", 
+        "id": 14224368, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "anti-social-behaviour", 
+        "location_type": "Force", 
+        "persistent_id": "9403e79b7c52bd4db3153385cfbd85f8f80d929c3822829b8247936c3e1865f6", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6526837", 
+            "street": {
+                "id": 789111, 
+                "name": "On or near Petrol Station"
+            }, 
+            "longitude": "-0.2814982"
+        }, 
+        "context": "", 
+        "id": 14217514, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "anti-social-behaviour", 
+        "location_type": "Force", 
+        "persistent_id": "185da5cac85539abde686055e5c7cb10bbbbf37f8b9d73743015323a696ffbe0", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6526837", 
+            "street": {
+                "id": 789111, 
+                "name": "On or near Petrol Station"
+            }, 
+            "longitude": "-0.2814982"
+        }, 
+        "context": "", 
+        "id": 14217694, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "vehicle-crime", 
+        "location_type": "Force", 
+        "persistent_id": "d71aca5c1f79dab19f03078a02852755430dbd33dfb3a1b678e3d5911f336d9e", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6526837", 
+            "street": {
+                "id": 789111, 
+                "name": "On or near Petrol Station"
+            }, 
+            "longitude": "-0.2814982"
+        }, 
+        "context": "", 
+        "id": 14229963, 
+        "outcome_status": {
+            "category": "Offender given a caution", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "criminal-damage-arson", 
+        "location_type": "Force", 
+        "persistent_id": "e2448177708317ad11617635dbd604f5c8789feab4b0f356b2da6fe39b287d03", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6526837", 
+            "street": {
+                "id": 789111, 
+                "name": "On or near Petrol Station"
+            }, 
+            "longitude": "-0.2814982"
+        }, 
+        "context": "", 
+        "id": 14230814, 
+        "outcome_status": {
+            "category": "No further action at this time", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "other-theft", 
+        "location_type": "Force", 
+        "persistent_id": "cf86a24482272083f513a7221ee49795e1bf1046e3d3a1c377fdac9becf7318c", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6526837", 
+            "street": {
+                "id": 789111, 
+                "name": "On or near Petrol Station"
+            }, 
+            "longitude": "-0.2814982"
+        }, 
+        "context": "", 
+        "id": 14227507, 
+        "outcome_status": {
+            "category": "No further action at this time", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "anti-social-behaviour", 
+        "location_type": "Force", 
+        "persistent_id": "8e6702d26f4bac4ec17ad01199e0266e9cfe5d100d5b1f9a2df83731f947750b", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6423307", 
+            "street": {
+                "id": 789142, 
+                "name": "On or near Delius Close"
+            }, 
+            "longitude": "-0.3035543"
+        }, 
+        "context": "", 
+        "id": 14218866, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "anti-social-behaviour", 
+        "location_type": "Force", 
+        "persistent_id": "10a56be6d7cb6decb4fcd173fbf7201a91e5d11b65c94d97825a59cafe1462d1", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6423307", 
+            "street": {
+                "id": 789142, 
+                "name": "On or near Delius Close"
+            }, 
+            "longitude": "-0.3035543"
+        }, 
+        "context": "", 
+        "id": 14220136, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "anti-social-behaviour", 
+        "location_type": "Force", 
+        "persistent_id": "79af2b6deb27c83e690352677309a7344605b5c0492a3386f911fa6d02178ec7", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6423307", 
+            "street": {
+                "id": 789142, 
+                "name": "On or near Delius Close"
+            }, 
+            "longitude": "-0.3035543"
+        }, 
+        "context": "", 
+        "id": 14220901, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "anti-social-behaviour", 
+        "location_type": "Force", 
+        "persistent_id": "cfefe1517030f69567010d3f9ed2d2dcb7a101a5883bd3c659a839850b9a82da", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6423307", 
+            "street": {
+                "id": 789142, 
+                "name": "On or near Delius Close"
+            }, 
+            "longitude": "-0.3035543"
+        }, 
+        "context": "", 
+        "id": 14220903, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "burglary", 
+        "location_type": "Force", 
+        "persistent_id": "b8698f4ef6db5bc3b16ee081af73aff6a4703b5bf501182ce9a9a0c7df9fab18", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6487949", 
+            "street": {
+                "id": 789102, 
+                "name": "On or near Deacon's Hill Road"
+            }, 
+            "longitude": "-0.2812117"
+        }, 
+        "context": "", 
+        "id": 14224370, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "criminal-damage-arson", 
+        "location_type": "Force", 
+        "persistent_id": "ae01ad13de8e87e3bdf2a5c8a4698640ef7a712b664b54e244850b66077023eb", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6455609", 
+            "street": {
+                "id": 789109, 
+                "name": "On or near Alwyn Close"
+            }, 
+            "longitude": "-0.2832708"
+        }, 
+        "context": "", 
+        "id": 14230386, 
+        "outcome_status": {
+            "category": "No further action at this time", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "burglary", 
+        "location_type": "Force", 
+        "persistent_id": "c2064e676b5ea2385a683be5713dc40c00e07e5c1f0b8b22063620056ec90380", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6486627", 
+            "street": {
+                "id": 789132, 
+                "name": "On or near Bishops Avenue"
+            }, 
+            "longitude": "-0.2856976"
+        }, 
+        "context": "", 
+        "id": 14223722, 
+        "outcome_status": {
+            "category": "No further action at this time", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "anti-social-behaviour", 
+        "location_type": "Force", 
+        "persistent_id": "", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6370568", 
+            "street": {
+                "id": 789026, 
+                "name": "On or near A41"
+            }, 
+            "longitude": "-0.3044881"
+        }, 
+        "context": "", 
+        "id": 13972126, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "other-crime", 
+        "location_type": "Force", 
+        "persistent_id": "b7e4d8b39e7cc791d4e2d60ef859ec732f0f0f3a1eec86e35335b8940ba25bbc", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6370568", 
+            "street": {
+                "id": 789026, 
+                "name": "On or near A41"
+            }, 
+            "longitude": "-0.3044881"
+        }, 
+        "context": "", 
+        "id": 14227845, 
+        "outcome_status": {
+            "category": "No further action at this time", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "other-crime", 
+        "location_type": "Force", 
+        "persistent_id": "d8bafd73825765b3ebd28a8e8ae4844121ecaa5d561694a7c03a01b6a5fdcee8", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6370568", 
+            "street": {
+                "id": 789026, 
+                "name": "On or near A41"
+            }, 
+            "longitude": "-0.3044881"
+        }, 
+        "context": "", 
+        "id": 14227853, 
+        "outcome_status": {
+            "category": "No further action at this time", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "other-crime", 
+        "location_type": "Force", 
+        "persistent_id": "b3b3d8b124bfc2c7674fc0b8522ba85e0868254ad0c08d513d0b46e99f3d0e12", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6370568", 
+            "street": {
+                "id": 789026, 
+                "name": "On or near A41"
+            }, 
+            "longitude": "-0.3044881"
+        }, 
+        "context": "", 
+        "id": 14227893, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "other-crime", 
+        "location_type": "Force", 
+        "persistent_id": "12064d5c1d7bce7cfaa7b3edb42fe5110c645d7718132ef5b6ed116127167f67", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6370568", 
+            "street": {
+                "id": 789026, 
+                "name": "On or near A41"
+            }, 
+            "longitude": "-0.3044881"
+        }, 
+        "context": "", 
+        "id": 14227843, 
+        "outcome_status": {
+            "category": "No further action at this time", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "other-crime", 
+        "location_type": "Force", 
+        "persistent_id": "d89629cc9a017779577145e3d7f260ece91b0ab9a1cb10ac56fe281d95d85a36", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6370568", 
+            "street": {
+                "id": 789026, 
+                "name": "On or near A41"
+            }, 
+            "longitude": "-0.3044881"
+        }, 
+        "context": "", 
+        "id": 14227896, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "other-crime", 
+        "location_type": "Force", 
+        "persistent_id": "759fe8765604828eedf6a67f446c00edc5ccc5a90073fde11e1be0d6407e8208", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6370568", 
+            "street": {
+                "id": 789026, 
+                "name": "On or near A41"
+            }, 
+            "longitude": "-0.3044881"
+        }, 
+        "context": "", 
+        "id": 14227950, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "other-crime", 
+        "location_type": "Force", 
+        "persistent_id": "a1157eff683020347ae2d33b1ec449f5e8110e43b41b910ee1d0ecd02bae089b", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6370568", 
+            "street": {
+                "id": 789026, 
+                "name": "On or near A41"
+            }, 
+            "longitude": "-0.3044881"
+        }, 
+        "context": "", 
+        "id": 14227895, 
+        "outcome_status": {
+            "category": "No further action at this time", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "vehicle-crime", 
+        "location_type": "Force", 
+        "persistent_id": "a2a5a32bb15887d8baea669b088650577752d4f555466c787f37bb31b811eb2a", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6521409", 
+            "street": {
+                "id": 789133, 
+                "name": "On or near Watling Street"
+            }, 
+            "longitude": "-0.2998054"
+        }, 
+        "context": "", 
+        "id": 14225404, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "other-theft", 
+        "location_type": "Force", 
+        "persistent_id": "0864b0179d68c91bbb8ca4e3da01c6f2a2e691f895fab253f6f82a8bb32eb301", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6521409", 
+            "street": {
+                "id": 789133, 
+                "name": "On or near Watling Street"
+            }, 
+            "longitude": "-0.2998054"
+        }, 
+        "context": "", 
+        "id": 14227653, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "anti-social-behaviour", 
+        "location_type": "Force", 
+        "persistent_id": "8612526cb35b49a832d16c40ae6dd806a78e615165dd2535995cb5e4d9d959da", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6394356", 
+            "street": {
+                "id": 789028, 
+                "name": "On or near Elstree Hill South"
+            }, 
+            "longitude": "-0.3023327"
+        }, 
+        "context": "", 
+        "id": 14219919, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "anti-social-behaviour", 
+        "location_type": "Force", 
+        "persistent_id": "424f23ce2e951acb563109b9a9a65a58c97d43228330b94dc62d0c94d141a24c", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6394356", 
+            "street": {
+                "id": 789028, 
+                "name": "On or near Elstree Hill South"
+            }, 
+            "longitude": "-0.3023327"
+        }, 
+        "context": "", 
+        "id": 14221800, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "other-theft", 
+        "location_type": "Force", 
+        "persistent_id": "70040134f1bd966a97d957ea25ae9d7c15771a25a67220188c52fd814d4099ee", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6396174", 
+            "street": {
+                "id": 789029, 
+                "name": "On or near Centennial Avenue"
+            }, 
+            "longitude": "-0.3080778"
+        }, 
+        "context": "", 
+        "id": 14227158, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "other-theft", 
+        "location_type": "Force", 
+        "persistent_id": "71eca3b8f33be9284f81fd262880df84aa8f4781ddadf299175b6f826b52e495", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6396174", 
+            "street": {
+                "id": 789029, 
+                "name": "On or near Centennial Avenue"
+            }, 
+            "longitude": "-0.3080778"
+        }, 
+        "context": "", 
+        "id": 14227160, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "other-theft", 
+        "location_type": "Force", 
+        "persistent_id": "9fe91ce9194dee3348d0dc0466dd6cd3cf5ab1adaa64818fb60825971fbc5df3", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6396174", 
+            "street": {
+                "id": 789029, 
+                "name": "On or near Centennial Avenue"
+            }, 
+            "longitude": "-0.3080778"
+        }, 
+        "context": "", 
+        "id": 14227162, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "other-theft", 
+        "location_type": "Force", 
+        "persistent_id": "9e5d6ba6521ed5e95607b89883e94fc57e83da4ea2622bc1df25bf4f9ef9c9f9", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6396174", 
+            "street": {
+                "id": 789029, 
+                "name": "On or near Centennial Avenue"
+            }, 
+            "longitude": "-0.3080778"
+        }, 
+        "context": "", 
+        "id": 14227336, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "other-theft", 
+        "location_type": "Force", 
+        "persistent_id": "0f97df3e5bbd77e1f4bbc7a5eeb1eaf16722c1bdc56b11ee404c849f56b76c67", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6437731", 
+            "street": {
+                "id": 789135, 
+                "name": "On or near Schubert Road"
+            }, 
+            "longitude": "-0.3013180"
+        }, 
+        "context": "", 
+        "id": 14227281, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "anti-social-behaviour", 
+        "location_type": "Force", 
+        "persistent_id": "6df1642f0c2f1df94db150a37a81d91e6da76b2b433d156149d47c26b880c1d3", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6533542", 
+            "street": {
+                "id": 790203, 
+                "name": "On or near Parking Area"
+            }, 
+            "longitude": "-0.2793912"
+        }, 
+        "context": "", 
+        "id": 14217874, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "anti-social-behaviour", 
+        "location_type": "Force", 
+        "persistent_id": "3e6d9d468082e5b9edbae20ed338299e416741a4e2fd1d4a859e026578ecb756", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6539400", 
+            "street": {
+                "id": 790206, 
+                "name": "On or near Barham Avenue"
+            }, 
+            "longitude": "-0.2868574"
+        }, 
+        "context": "", 
+        "id": 14221161, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "violent-crime", 
+        "location_type": "BTP", 
+        "persistent_id": "", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6530999", 
+            "street": {
+                "id": 1397343, 
+                "name": "Elstree And Borehamwood"
+            }, 
+            "longitude": "-0.2800199"
+        }, 
+        "context": "", 
+        "id": 14483586, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "other-crime", 
+        "location_type": "BTP", 
+        "persistent_id": "", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6530999", 
+            "street": {
+                "id": 1397343, 
+                "name": "Elstree And Borehamwood"
+            }, 
+            "longitude": "-0.2800199"
+        }, 
+        "context": "", 
+        "id": 14483577, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "other-crime", 
+        "location_type": "BTP", 
+        "persistent_id": "", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6530999", 
+            "street": {
+                "id": 1397343, 
+                "name": "Elstree And Borehamwood"
+            }, 
+            "longitude": "-0.2800199"
+        }, 
+        "context": "", 
+        "id": 14483578, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "other-crime", 
+        "location_type": "BTP", 
+        "persistent_id": "", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6530999", 
+            "street": {
+                "id": 1397343, 
+                "name": "Elstree And Borehamwood"
+            }, 
+            "longitude": "-0.2800199"
+        }, 
+        "context": "", 
+        "id": 14483579, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "other-crime", 
+        "location_type": "BTP", 
+        "persistent_id": "", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6530999", 
+            "street": {
+                "id": 1397343, 
+                "name": "Elstree And Borehamwood"
+            }, 
+            "longitude": "-0.2800199"
+        }, 
+        "context": "", 
+        "id": 14483584, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "other-crime", 
+        "location_type": "BTP", 
+        "persistent_id": "", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6530999", 
+            "street": {
+                "id": 1397343, 
+                "name": "Elstree And Borehamwood"
+            }, 
+            "longitude": "-0.2800199"
+        }, 
+        "context": "", 
+        "id": 14483575, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "burglary", 
+        "location_type": "Force", 
+        "persistent_id": "c27fd818e046af81e5eb2466d2d88bbe4fcd54b2c7ddee641a72b5b089779304", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6394659", 
+            "street": {
+                "id": 789030, 
+                "name": "On or near Edgwarebury Lane"
+            }, 
+            "longitude": "-0.2889348"
+        }, 
+        "context": "", 
+        "id": 14224590, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "violent-crime", 
+        "location_type": "Force", 
+        "persistent_id": "b5683365f9665ac9f038288049a259420c7ad500feb0fb165b25431c0e0d67f3", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6394659", 
+            "street": {
+                "id": 789030, 
+                "name": "On or near Edgwarebury Lane"
+            }, 
+            "longitude": "-0.2889348"
+        }, 
+        "context": "", 
+        "id": 14229766, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "anti-social-behaviour", 
+        "location_type": "Force", 
+        "persistent_id": "176844c81c09292fbd991d8cd079095753736548f3eafa311b61cce0c99e1d68", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6445928", 
+            "street": {
+                "id": 789151, 
+                "name": "On or near Roman Road"
+            }, 
+            "longitude": "-0.2983100"
+        }, 
+        "context": "", 
+        "id": 14218056, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "anti-social-behaviour", 
+        "location_type": "Force", 
+        "persistent_id": "15cc421d73077c886a50c122ade2ac65ecb629daad89f651d244bff913431466", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6429770", 
+            "street": {
+                "id": 789149, 
+                "name": "On or near Summer Grove"
+            }, 
+            "longitude": "-0.2978791"
+        }, 
+        "context": "", 
+        "id": 14221160, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "burglary", 
+        "location_type": "Force", 
+        "persistent_id": "af799893afefbd14811b615a39f0fb6b118f99fcc4d8d26b63284291960542c5", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6499242", 
+            "street": {
+                "id": 789095, 
+                "name": "On or near Knowl Park"
+            }, 
+            "longitude": "-0.2889603"
+        }, 
+        "context": "", 
+        "id": 14224477, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "burglary", 
+        "location_type": "Force", 
+        "persistent_id": "09bd2a6618586e68b286a98f06e2e53cba2c0f2fc30538ca98fd2f07dc08735d", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6501914", 
+            "street": {
+                "id": 789094, 
+                "name": "On or near Knowl Way"
+            }, 
+            "longitude": "-0.2881696"
+        }, 
+        "context": "", 
+        "id": 14223797, 
+        "outcome_status": {
+            "category": "No further action at this time", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "anti-social-behaviour", 
+        "location_type": "Force", 
+        "persistent_id": "094c969666bd2b883e0ab733557b132edab28ebf4cb7954b186c0c81b3a8991d", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6437217", 
+            "street": {
+                "id": 789145, 
+                "name": "On or near Yew Tree Court"
+            }, 
+            "longitude": "-0.2977645"
+        }, 
+        "context": "", 
+        "id": 14218868, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "criminal-damage-arson", 
+        "location_type": "Force", 
+        "persistent_id": "6577c91b498994227e347659e709e01faf6ad044b2274301447611780f46c781", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6430938", 
+            "street": {
+                "id": 789146, 
+                "name": "On or near Westview Court"
+            }, 
+            "longitude": "-0.2991176"
+        }, 
+        "context": "", 
+        "id": 14230303, 
+        "outcome_status": {
+            "category": "No further action at this time", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "burglary", 
+        "location_type": "Force", 
+        "persistent_id": "2caba81bc37915de6561adb52c48bde724ce11ae2ddbcfa02be7b8a3ba3d720f", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6315128", 
+            "street": {
+                "id": 984836, 
+                "name": "On or near Hospital"
+            }, 
+            "longitude": "-0.3066454"
+        }, 
+        "context": "", 
+        "id": 13997884, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "anti-social-behaviour", 
+        "location_type": "Force", 
+        "persistent_id": "", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6315128", 
+            "street": {
+                "id": 984836, 
+                "name": "On or near Hospital"
+            }, 
+            "longitude": "-0.3066454"
+        }, 
+        "context": "", 
+        "id": 13972125, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "violent-crime", 
+        "location_type": "Force", 
+        "persistent_id": "92e7bd2b4c03282ca2237efe34afe88af290f4e62ffea9000b291c188b5d5e4e", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6315128", 
+            "street": {
+                "id": 984836, 
+                "name": "On or near Hospital"
+            }, 
+            "longitude": "-0.3066454"
+        }, 
+        "context": "", 
+        "id": 14057050, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "other-theft", 
+        "location_type": "Force", 
+        "persistent_id": "dc636e4d9f37ddc1508ce50a8b946807ecab5623ced8f5e557cdb05832c70e78", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6315128", 
+            "street": {
+                "id": 984836, 
+                "name": "On or near Hospital"
+            }, 
+            "longitude": "-0.3066454"
+        }, 
+        "context": "", 
+        "id": 14024515, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "other-theft", 
+        "location_type": "Force", 
+        "persistent_id": "fe446f78ac7bdc9e4565c66efca184ba5812a3836479819d434cc3ad95b0be1d", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6315128", 
+            "street": {
+                "id": 984836, 
+                "name": "On or near Hospital"
+            }, 
+            "longitude": "-0.3066454"
+        }, 
+        "context": "", 
+        "id": 14019109, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "other-theft", 
+        "location_type": "Force", 
+        "persistent_id": "f6516ae4a780c1651986a13d86acbb783abee7cd8cbfef242491f54674792c39", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6505218", 
+            "street": {
+                "id": 789167, 
+                "name": "On or near Dagger Lane"
+            }, 
+            "longitude": "-0.3178772"
+        }, 
+        "context": "", 
+        "id": 14227295, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }, 
+    {
+        "category": "other-theft", 
+        "location_type": "Force", 
+        "persistent_id": "9fc8b99f37fb3f140f82fc9f5bf7ca808fe83e69ac79a84733d9010e08be0f5d", 
+        "month": "2012-06", 
+        "location": {
+            "latitude": "51.6427452", 
+            "street": {
+                "id": 789165, 
+                "name": "On or near The Waterfront"
+            }, 
+            "longitude": "-0.3148553"
+        }, 
+        "context": "", 
+        "id": 14225154, 
+        "outcome_status": {
+            "category": "Under investigation", 
+            "date": "2012-06"
+        }
+    }
+]
