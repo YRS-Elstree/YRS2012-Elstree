@@ -46,7 +46,7 @@ function countCrimes(data, map){
 			if(sortedData == undefined || sortedData == null){
 				sortedData = crime;
 			}else{
-				if(map[crime] > map[sortedData]){
+				if(map[crime] < map[sortedData]){
 					sortedData = crime;
 				}
 			}
