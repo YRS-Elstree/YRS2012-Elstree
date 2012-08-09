@@ -119,7 +119,7 @@ function leastCrimes(data, map){;
 }
 
 function orderCrimes(map){
-	var sortedData = {};
+	var sortedData = [];
 	var length = map.length;
 	
 	while(true){
@@ -133,7 +133,7 @@ function orderCrimes(map){
 				}
 			}
 		}
-		sortedData.insert( {highestValue: map[highestValue]} );	
+		sortedData.push({highestValue: map[highestValue]});	
 		map.remove(highestValue);
 		
 		if(sortedData.length == length){
