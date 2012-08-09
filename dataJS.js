@@ -1,20 +1,25 @@
-function startDataStuff(position){	
-	var date = lastUpdated();
-	console.log(date);
-	
-	var url = "/api/crimes-street/all-crime?date="+date+"&lat="+position.coords.latitude+"&lng="+position.coords.longitude;
-	$.ajax(url, {
-		username: "ficah53",
-		password: "5d5faaa7ba76287f305755bbfe626dc7",
-		dataType: "json",
-		success:
-			function (data, status){
-				console.log(data);
-				dealWithTheData(data);
-			},
-	});
+
+function callPoliceApi(url, success) {
+    $.ajax(url, {
+        username:"ficah53",
+        password:"5d5faaa7ba76287f305755bbfe626dc7",
+        dataType:"json",
+        success:success
+    });
 }
-	
+
+function startDataStuff(position) {
+    var date = lastUpdated();
+    console.log(date);
+
+    var url = "/api/crimes-street/all-crime?date=" + date + "&lat=" + position.coords.latitude + "&lng=" + position.coords.longitude;
+
+    callPoliceApi(url, function (data, status) {
+        console.log(data);
+        dealWithTheData(data);
+    });
+}
+
 function dealWithTheData(data) {
 	var map = {
 		
@@ -72,26 +77,18 @@ function mostCrimes(data, map){
 	$("#frequent").text(highestValue);
 }
 
-function lastUpdated(){
-		var url = "/api/crime-last-updated";
-		$.ajax(url, {
-			username: "ficah53",
-			password: "5d5faaa7ba76287f305755bbfe626dc7",
-			dataType: "json",
-			success:
-				function (data, status){
-					console.log(data.date);
-						var date = new Date(data.date);
-						var monthNames = [ "January", "February", "March", "April", "May", "June",
-						    "July", "August", "September", "October", "November", "December" ];
-							var monthName = monthNames[date.getMonth()];
-						$("#crimemonth").text(monthName);
-						var returnString = date.substring(0, 7);
-						console.log("Date: "+returnString);
-						return returnString;
-				},
-		});
-
+function lastUpdated() {
+    callPoliceApi("/api/crime-last-updated", function (data, status) {
+        console.log(data.date);
+        var date = new Date(data.date);
+        var monthNames = [ "January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December" ];
+        var monthName = monthNames[date.getMonth()];
+        $("#crimemonth").text(monthName);
+        var returnString = date.substring(0, 7);
+        console.log("Date: " + returnString);
+        return returnString;
+    });
 }
 
 function isGuilty(crimeOutcome){
