@@ -40,16 +40,18 @@ function countCrimes(data, map){
 	console.log("Length of map: "+length);
 	$("#crimecount").text(length);
 	
-	var sortedData;
+	var highestValue;
 	
 	for(var crime in map){
-			if(sortedData == undefined || sortedData == null){
-				sortedData = crime;
+			if(highestValue == undefined || highestValue == null){
+				highestValue = crime;
 			}else{
-				if(map[crime] < map[sortedData]){
-					sortedData = crime;
+				if(map[crime] > map[highestValue]){
+					highestValue = crime;
 				}
 			}
-			console.log(sortedData);
+			console.log(highestValue);
 	}
+	
+	$("#frequent").text(highestValue);
 }
