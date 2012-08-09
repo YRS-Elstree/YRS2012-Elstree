@@ -120,7 +120,7 @@ function leastCrimes(data, map){;
 
 function orderCrimes(map){
 	var sortedData = [];
-	var length = map.length;
+	var length = Object.keys(map).length;
 	
 	while(true){
 		var highestValue;
