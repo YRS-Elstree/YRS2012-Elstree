@@ -1,0 +1,10 @@
+#navWrapper {text-align: center;
+				width: 20px;}
+	
+.navButton {text-align: center;
+			width: 100px;
+			margin-top: 80px;
+			padding: 10px 0px 10px 0px;
+			float: left;
+			border: 1px solid blue;
+			font-size: 10px;}
