@@ -66,6 +66,20 @@ function countCrimes(data, map){
 	}
 }
 
+function lastUpdated(){
+		var url = "/api/crime-last-updated"
+		$.ajax(url, {
+			username: "ficah53",
+			password: "5d5faaa7ba76287f305755bbfe626dc7",
+			dataType: "json",
+			success:
+				function (data, status){
+					console.log(data.date);
+				},
+		});
+
+}
+
 function isGuilty(crimeOutcome){
 	var guilties = ["awaiting-court-result", "unable-to-proceed", "deprived-of-property", "fined", "cautioned", "penalty-notice-issued", "community-penalty", "conditional-discharge", "suspended-sentence", "imprisoned", "other-court-disposal", "compensation", "charged", "sent-to-crown-court", "Offender given a caution", "Awaiting court outcome"];
 	
