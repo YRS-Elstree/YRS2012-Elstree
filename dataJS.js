@@ -84,7 +84,7 @@ function lastUpdated() {
         var monthNames = [ "January", "February", "March", "April", "May", "June",
             "July", "August", "September", "October", "November", "December" ];
         var monthName = monthNames[date.getMonth()];
-        $("#crimemonth").text(monthName);
+        $(".crimemonth").text(monthName);
         var returnString = date.substring(0, 7);
         console.log("Date: " + returnString);
         return returnString;
