@@ -43,7 +43,7 @@ function displayAddress(lat, lng) {
                 alert("We could not determine your position");
             } else {
                 jQuery.each(results, function (index, item) {
-                    if (anyof([ "neighbourhood", "sublocality", "locality", "postal_town"], item.types)) {
+                    if (anyof([ "neighbourhood", "sublocality", "locality", "postal_town", "transit_station"], item.types)) {
                         $("#placename").text(item.formatted_address);
                         return false;
                     }
