@@ -78,6 +78,7 @@ function mostCrimes(data, map){
 }
 
 function lastUpdated() {
+    var returnString;
     callPoliceApi("/api/crime-last-updated", function (data, status) {
         console.log(data.date);
         var date = new Date(data.date);
@@ -85,10 +86,10 @@ function lastUpdated() {
             "July", "August", "September", "October", "November", "December" ];
         var monthName = monthNames[date.getMonth()];
         $(".data-crimemonth").text(monthName);
-        var returnString = date.substring(0, 7);
+        returnString = date.substring(0, 7);
         console.log("Date: " + returnString);
-        return returnString;
     });
+    return returnString;
 }
 
 function isGuilty(crimeOutcome){
