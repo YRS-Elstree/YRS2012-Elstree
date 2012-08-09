@@ -105,7 +105,15 @@
 </table>
 <script type="text/javascript">
     $(document).ready(function () {
-        startHere();
+        startHere(
+                function (position) {
+                    retrieveCrimesForPosition(position.coords, function (data, status) {
+                        console.log(data);
+                        dataReceivedForIndexPage(data);
+                    });
+                    displayAddress(position.coords);
+                }
+        );
     });
 </script>
 

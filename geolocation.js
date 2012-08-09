@@ -1,6 +1,6 @@
-function startHere() {
+function startHere(success) {
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(successFunction, errorFunction);
+        navigator.geolocation.getCurrentPosition(success, errorFunction);
     } else {
         alert("Please enable GeoLocation");
     }
@@ -11,14 +11,6 @@ function errorFunction(positionError) {
     console.log(positionError.message);
 }
 
-function successFunction(position) {
-    var lat = position.coords.latitude;
-    var lng = position.coords.longitude;
-
-    startDataStuff(position);
-
-    displayAddress(lat, lng);
-}
 
 function anyof(wanted, list) {
     var found = false;
@@ -31,7 +23,9 @@ function anyof(wanted, list) {
     return found;
 }
 
-function displayAddress(lat, lng) {
+function displayAddress(coords) {
+    var lat = coords.latitude;
+    var lng = coords.longitude;
     var latlng = new google.maps.LatLng(lat, lng);
 
     console.log("Requesting location for lat,long = " + lat + ", " + lng);

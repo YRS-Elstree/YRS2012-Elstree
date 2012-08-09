@@ -8,33 +8,33 @@ function callPoliceApi(url, success) {
     });
 }
 
-function startDataStuff(position) {
+function retrieveCrimesForPosition(position, success) {
     var date = lastUpdated();
     console.log(date);
 
     var url = "/api/crimes-street/all-crime?date=" + date + "&lat=" + position.coords.latitude + "&lng=" + position.coords.longitude;
 
-    callPoliceApi(url, function (data, status) {
-        console.log(data);
-        dealWithTheData(data);
-    });
+    callPoliceApi(url, success);
 }
 
-function dealWithTheData(data) {
-	var map = {
-		
-	};
-	var counter = 0;
-	jQuery.each(data, function(index, crime){
-		var category = crime.category;
-		if(category in map){
-			map[category]++;
-		}else{
-			map[category] = 1;
-		}
-	});
-	
-	console.log("Map pre sorting:");
+function countCrimes(data) {
+    var map = {
+
+    };
+    jQuery.each(data, function (index, crime) {
+        var category = crime.category;
+        if (category in map) {
+            map[category]++;
+        } else {
+            map[category] = 1;
+        }
+    });
+    return map;
+}
+
+function dataReceivedForIndexPage(data) {
+    var map = countCrimes(data);
+    console.log("Map pre sorting:");
 	
 	for(var crime in map){
 		console.log(crime+"  "+map[crime]);
