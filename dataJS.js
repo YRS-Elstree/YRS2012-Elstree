@@ -26,7 +26,11 @@ function dealWithTheData(data) {
 		}
 	});
 	
-	console.log("Map pre sorting"+map);
+	console.log("Map pre sorting:");
+	
+	for(var crime in map){
+		console.log(map[crime]);
+	}
 
 	countCrimes(data);
 }
