@@ -78,6 +78,7 @@ function lastUpdated(){
 			success:
 				function (data, status){
 					console.log(data.date);
+						$("#crimemonth").text(data.date);
 				},
 		});
 
