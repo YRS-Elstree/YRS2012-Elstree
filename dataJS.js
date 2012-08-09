@@ -38,7 +38,7 @@ function dealWithTheData(data) {
 	var countArrests = 0;
 	
 	jQuery.each(data, function(index, crime){
-		var outcome = crime.outcome-staus["category"];
+		var outcome = crime.outcome-status["category"];
 		if(isGuilty(outcome)){
 			countArrests++;
 		}
