@@ -45,6 +45,7 @@ function dealWithTheData(data) {
 		}
 	});
 	console.log(countArrests);
+	$("#number").text(countArrests);
 }
 
 function countCrimes(data, map){
@@ -64,6 +65,7 @@ function countCrimes(data, map){
 			}
 			console.log(highestValue);
 	}
+	$("#frequent").text(highestValue);
 }
 
 function lastUpdated(){
