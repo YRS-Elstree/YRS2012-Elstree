@@ -56,7 +56,10 @@ function dataReceivedForIndexPage(data) {
 	$("#number").text(countArrests);
 	
 	var sortedMap = orderCrimes(map);
-	console.log("sorted map: "+sortedMap);
+	console.log("sorted map");
+	for(var crime in sortedMap){
+		console.log(sortedMap[crime]);
+	}
 }
 
 function mostCrimes(data, map){
