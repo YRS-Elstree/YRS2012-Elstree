@@ -1,4 +1,5 @@
 function startDataStuff(position){	
+	lastUpdated();
 	var url = "/api/crimes-street/all-crime?date=2012-06&lat="+position.coords.latitude+"&lng="+position.coords.longitude;
 	$.ajax(url, {
 		username: "ficah53",
@@ -69,7 +70,7 @@ function countCrimes(data, map){
 }
 
 function lastUpdated(){
-		var url = "/api/crime-last-updated"
+		var url = "/api/crime-last-updated";
 		$.ajax(url, {
 			username: "ficah53",
 			password: "5d5faaa7ba76287f305755bbfe626dc7",
