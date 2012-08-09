@@ -78,7 +78,11 @@ function lastUpdated(){
 			success:
 				function (data, status){
 					console.log(data.date);
-						$("#crimemonth").text(data.date);
+						var objDate = new Date(data.date);
+						var monthNames = [ "January", "February", "March", "April", "May", "June",
+						    "July", "August", "September", "October", "November", "December" ];
+							var monthName = monthNames[d.getMonth()];
+						$("#crimemonth").text(monthName);
 				},
 		});
 
