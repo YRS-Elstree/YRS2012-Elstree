@@ -48,7 +48,6 @@ function dataReceivedForIndexPage(data) {
 	
 	jQuery.each(data, function(index, crime){
 		var outcome = crime.outcome_status["category"];
-		console.log(outcome);
 		if(isGuilty(outcome)){
 			countArrests++;
 		}
@@ -72,7 +71,6 @@ function mostCrimes(data, map){
 					highestValue = crime;
 				}
 			}
-			console.log(highestValue);
 	}
 	$("#frequent").text(highestValue);
 }
@@ -86,7 +84,7 @@ function lastUpdated() {
             "July", "August", "September", "October", "November", "December" ];
         var monthName = monthNames[date.getMonth()];
         $(".data-crimemonth").text(monthName);
-        returnString = date.substring(0, 7);
+        returnString = data.date.substring(0, 7);
         console.log("Date: " + returnString);
     });
     return returnString;
@@ -113,7 +111,6 @@ function leastCrimes(data, map){;
 					lowestValue = crime;
 				}
 			}
-			console.log(lowestValue);
 	}
 	$("#rare").text(lowestValue);
 }
