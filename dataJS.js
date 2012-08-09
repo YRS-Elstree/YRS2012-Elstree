@@ -131,7 +131,7 @@ function orderCrimes(map){
 			if(highestValue == undefined || highestValue == null){
 				highestValue = crime;
 			}else{
-				if(map[crime] < map[highestValue]){
+				if(map[crime] > map[highestValue]){
 					highestValue = crime;
 				}
 			}
