@@ -8,11 +8,11 @@ function callPoliceApi(url, success) {
     });
 }
 
-function retrieveCrimesForPosition(position, success) {
+function retrieveCrimesForPosition(coords, success) {
     var date = lastUpdated();
     console.log(date);
 
-    var url = "/api/crimes-street/all-crime?date=" + date + "&lat=" + position.coords.latitude + "&lng=" + position.coords.longitude;
+    var url = "/api/crimes-street/all-crime?date=" + date + "&lat=" + coords.latitude + "&lng=" + coords.longitude;
 
     callPoliceApi(url, success);
 }
