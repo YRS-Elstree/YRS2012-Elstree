@@ -32,11 +32,24 @@ function dealWithTheData(data) {
 		console.log(crime+"  "+map[crime]);
 	}
 
-	countCrimes(data);
+	countCrimes(data, map);
 }
 
-function countCrimes(data){
+function countCrimes(data, map){
 	var length = Object.keys(data).length;
 	console.log("Length of map: "+length);
 	$("#crimecount").text(length);
+	
+	var sortedData;
+	
+	for(var crime in map){
+			if(sortedData == undefined || sortedData == null){
+				sortedData = crime;
+			}else{
+				if(map[crime] > map[sortedData]){
+					sortedData = crime;
+				}
+			}
+			console.log(sortedData);
+	}
 }
