@@ -134,7 +134,7 @@ function orderCrimes(map){
 			}
 		}
 		sortedData.push({highestValue: map[highestValue]});	
-		map.remove(highestValue);
+		delete map[highestValue];
 		
 		if(sortedData.length == length){
 			break;
