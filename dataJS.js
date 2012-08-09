@@ -54,6 +54,9 @@ function dataReceivedForIndexPage(data) {
 	});
 	console.log(countArrests);
 	$("#number").text(countArrests);
+	
+	var sortedMap = orderCrimes(map);
+	console.log("sorted map: "+sortedMap);
 }
 
 function mostCrimes(data, map){
@@ -113,4 +116,29 @@ function leastCrimes(data, map){;
 			}
 	}
 	$("#rare").text(lowestValue);
+}
+
+function orderCrimes(map){
+	var sortedData = {};
+	var length = map.length;
+	
+	while(true){
+		var highestValue;
+		for(var crime in map){
+			if(highestValue == undefined || highestValue == null){
+				highestValue = crime;
+			}else{
+				if(map[crime] < map[highestValue]){
+					highestValue = crime;
+				}
+			}
+		}
+		sortedData.push( highestValue: map[highestValue] );
+		map.remove(highestValue);
+		
+		if(sortedData.length == length){
+			break;
+		}
+	}
+	return sortedData;
 }
