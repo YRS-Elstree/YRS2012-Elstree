@@ -67,7 +67,7 @@ function countCrimes(data, map){
 }
 
 function isGuilty(crimeOutcome){
-	var guilties = ["awaiting-court-result", "unable-to-proceed", "deprived-of-property", "fined", "cautioned", "penalty-notice-issued", "community-penalty", "conditional-discharge", "suspended-sentence", "imprisoned", "other-court-disposal", "compensation", "charged", "sent-to-crown-court"];
+	var guilties = ["awaiting-court-result", "unable-to-proceed", "deprived-of-property", "fined", "cautioned", "penalty-notice-issued", "community-penalty", "conditional-discharge", "suspended-sentence", "imprisoned", "other-court-disposal", "compensation", "charged", "sent-to-crown-court", "Offender given a caution", "Awaiting court outcome"];
 	
 	if(jQuery.inArray(crimeOutcome, guilties) != -1){
 		return true;
