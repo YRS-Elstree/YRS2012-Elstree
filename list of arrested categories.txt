@@ -1,0 +1,14 @@
+awaiting-court-result
+unable-to-proceed
+deprived-of-property
+fined
+cautioned
+penalty-notice-issued
+community-penalty
+conditional-discharge
+suspended-sentence
+imprisoned
+other-court-disposal
+compensation
+charged
+sent-to-crown-court

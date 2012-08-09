@@ -33,6 +33,17 @@ function dealWithTheData(data) {
 	}
 
 	countCrimes(data, map);
+	
+	// Count arrests
+	var countArrests = 0;
+	
+	jQuery.each(data, function(index, crime){
+		var outcome = crime.outcome-staus["category"];
+		if(isGuilty(outcome)){
+			countArrests++;
+		}
+	});
+	console.log(countArrests);
 }
 
 function countCrimes(data, map){
@@ -52,6 +63,14 @@ function countCrimes(data, map){
 			}
 			console.log(highestValue);
 	}
+}
+
+function isGuilty(crimeOutcome){
+	var guilties = ["awaiting-court-result", "unable-to-proceed", "deprived-of-property", "fined", "cautioned", "penalty-notice-issued", "community-penalty", "conditional-discharge", "suspended-sentence", "imprisoned", "other-court-disposal", "compensation", "charged", "sent-to-crown-court"];
 	
-	$("#frequent").text(highestValue);
+	if(jQuery.inArray(crimeOutcome, guilties) != -1){
+		return true;
+	}else{
+		return false;
+	}
 }
