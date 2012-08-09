@@ -1,7 +1,6 @@
 function startDataStuff(position){	
 	var date = lastUpdated();
 	console.log(date);
-	date.substring(0, 7);
 	
 	var url = "/api/crimes-street/all-crime?date="+date+"&lat="+position.coords.latitude+"&lng="+position.coords.longitude;
 	$.ajax(url, {
@@ -87,8 +86,9 @@ function lastUpdated(){
 						    "July", "August", "September", "October", "November", "December" ];
 							var monthName = monthNames[date.getMonth()];
 						$("#crimemonth").text(monthName);
-						console.log("Date: "+data.date);
-						return data.date;
+						var returnString = date.substring(0, 7);
+						console.log("Date: "+returnString);
+						return returnString;
 				},
 		});
 
