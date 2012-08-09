@@ -33,7 +33,8 @@ function dealWithTheData(data) {
 		console.log(crime+"  "+map[crime]);
 	}
 
-	countCrimes(data, map);
+	mostCrimes(data, map);
+	leastCrimes(data, map);
 	
 	// Count arrests
 	var countArrests = 0;
@@ -49,7 +50,7 @@ function dealWithTheData(data) {
 	$("#number").text(countArrests);
 }
 
-function countCrimes(data, map){
+function mostCrimes(data, map){
 	var length = Object.keys(data).length;
 	console.log("Length of map: "+length);
 	$("#crimecount").text(length);
@@ -96,4 +97,20 @@ function isGuilty(crimeOutcome){
 	}else{
 		return false;
 	}
+}
+
+function leastCrimes(data, map){;	
+	var lowestValue;
+	
+	for(var crime in map){
+			if(lowestValue == undefined || lowestValue == null){
+				lowestValue = crime;
+			}else{
+				if(map[crime] < map[lowestValue]){
+					lowestValue = crime;
+				}
+			}
+			console.log(lowestValue);
+	}
+	$("#rare").text(lowestValue);
 }
