@@ -1,6 +1,6 @@
 function startDataStuff(position){	
-	lastUpdated();
-	var url = "/api/crimes-street/all-crime?date=2012-06&lat="+position.coords.latitude+"&lng="+position.coords.longitude;
+	console.log(lastUpdated());
+	var url = "/api/crimes-street/all-crime?date="+data.date+"&lat="+position.coords.latitude+"&lng="+position.coords.longitude;
 	$.ajax(url, {
 		username: "ficah53",
 		password: "5d5faaa7ba76287f305755bbfe626dc7",
@@ -84,6 +84,7 @@ function lastUpdated(){
 						    "July", "August", "September", "October", "November", "December" ];
 							var monthName = monthNames[date.getMonth()];
 						$("#crimemonth").text(monthName);
+						return data.date;
 				},
 		});
 
