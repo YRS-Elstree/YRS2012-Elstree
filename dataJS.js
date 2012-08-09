@@ -29,7 +29,7 @@ function dealWithTheData(data) {
 	console.log("Map pre sorting:");
 	
 	for(var crime in map){
-		console.log("Crime: "+map[crime]);
+		console.log(crime+"  "+map[crime]);
 	}
 
 	countCrimes(data);
