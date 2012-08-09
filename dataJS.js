@@ -1,6 +1,8 @@
 function startDataStuff(position){	
-	console.log(lastUpdated());
-	var url = "/api/crimes-street/all-crime?date="+data.date+"&lat="+position.coords.latitude+"&lng="+position.coords.longitude;
+	var date = lastUpdated();
+	date.substring(0, 7);
+	
+	var url = "/api/crimes-street/all-crime?date="+date+"&lat="+position.coords.latitude+"&lng="+position.coords.longitude;
 	$.ajax(url, {
 		username: "ficah53",
 		password: "5d5faaa7ba76287f305755bbfe626dc7",
