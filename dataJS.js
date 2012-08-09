@@ -133,7 +133,7 @@ function orderCrimes(map){
 				}
 			}
 		}
-		sortedData.add( {highestValue: map[highestValue]} );	
+		sortedData.insert( {highestValue: map[highestValue]} );	
 		map.remove(highestValue);
 		
 		if(sortedData.length == length){
