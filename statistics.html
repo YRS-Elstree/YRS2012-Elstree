@@ -1,0 +1,141 @@
+<html>
+<head>
+    <title>crimeviewer</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="geolocation.js"></script>
+    <script type="text/javascript" src="dataJS.js"></script>
+    <style type="text/css">
+        <!--
+        body {
+            background-image: url(images/bg.jpg);
+            background-repeat: repeat;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+
+        .location {
+            color: #06C;
+            font-size: 20px;
+            font-style: italic;
+        }
+        -->
+    </style>
+    <link rel="stylesheet" type="text/css" href="tblstyle.css" />
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<!-- Save for Web Slices (crimeviewer.psd) -->
+<table width="322" height="385" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+    <tr>
+        <td colspan="6">
+            <img src="images/crimeviewer_01.png" width="321" height="9" alt=""></td>
+        <td>
+            <img src="images/spacer.gif" width="1" height="9" alt=""></td>
+    </tr>
+    <tr>
+        <td colspan="2" rowspan="2">
+            <img src="images/crimeviewer_02.png" width="27" height="23" alt=""></td>
+        <td>
+            <img src="images/crimeviewer_03.png" width="100%" height="9" alt=""></td>
+        <td colspan="3">
+            <img src="images/crimeviewer_04.png" width="141" height="9" alt=""></td>
+        <td>
+            <img src="images/spacer.gif" width="1" height="9" alt=""></td>
+    </tr>
+    <tr>
+        <td colspan="2" rowspan="3">
+            <table width="267" height="257" bgcolor="#FFFFFF" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td valign="top">
+                        <p>Crimes in
+                            <span class="location" id='placename'> (searching ...)</span>
+                             during the past month, <span class="location" id="crimemonth">---</span>. 
+                             <table border="0" width="100%">
+        <tr>
+            <td width="30%">Murder</td>
+            <td><span class="a" style="display: inline-block; width: 100%;">100</span</td>
+        </tr>
+        <tr>
+            <td>Burglaries</td>
+            <td><span class="b" style="display: inline-block; width: 75%;">75</span></td>
+        </tr>
+        <tr>
+            <td>Burglaries</td>
+            <td><span class="c" style="display: inline-block; width: 50%;">50</span></td>
+        </tr>
+    </table>
+
+                    </p>
+
+                        </td>
+                </tr>
+            </table>
+        </td>
+        <td colspan="2">
+            <img src="images/crimeviewer_06.png" width="27" height="14" alt=""></td>
+        <td>
+            <img src="images/spacer.gif" width="1" height="14" alt=""></td>
+    </tr>
+    <tr>
+        <td rowspan="4">
+            <img src="images/crimeviewer_07.png" width="13" height="353" alt=""></td>
+        <td>
+            <img src="images/crimeviewer_08.png" width="14" height="100%" alt=""></td>
+        <td>
+            <img src="images/crimeviewer_09.png" width="17" height="100%" alt=""></td>
+        <td rowspan="4">
+            <img src="images/crimeviewer_10.png" width="10" height="353" alt=""></td>
+        <td>
+            <img src="images/spacer.gif" width="1" height="235" alt=""></td>
+    </tr>
+    <tr>
+        <td rowspan="3">
+            <img src="images/crimeviewer_11.png" width="14" height="118" alt=""></td>
+        <td rowspan="3">
+            <img src="images/crimeviewer_12.png" width="17" height="118" alt=""></td>
+        <td>
+            <img src="images/spacer.gif" width="1" height="8" alt=""></td>
+    </tr>
+    <tr>
+        <td>
+            <img src="images/crimeviewer_13.png" width="100%" height="47" alt=""></td>
+        <td rowspan="2">
+            <img src="images/crimeviewer_14.png" width="114" height="110" alt=""></td>
+        <td>
+            <img src="images/spacer.gif" width="1" height="47" alt=""></td>
+    </tr>
+    <tr>
+        <td>
+            <img src="images/crimeviewer_15.png" width="153" height="63" alt=""></td>
+        <td>
+            <img src="images/spacer.gif" width="1" height="63" alt=""></td>
+    </tr>
+</table>
+<script type="text/javascript">
+    $(document).ready(function () {
+        startHere();
+    });
+</script>
+
+<script type="text/javascript">
+    var GoSquared = {};
+    GoSquared.acct = "GSN-955045-I";
+    (function (w) {
+        function gs() {
+            w._gstc_lt = +new Date;
+            var d = document, g = d.createElement("script");
+            g.type = "text/javascript";
+            g.src = "//d1l6p2sc9645hc.cloudfront.net/tracker.js";
+            var s = d.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(g, s);
+        }
+
+        w.addEventListener ?
+                w.addEventListener("load", gs, false) :
+                w.attachEvent("onload", gs);
+    })(window);
+</script>
+</body>
+</html>
