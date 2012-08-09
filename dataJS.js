@@ -139,7 +139,7 @@ function orderCrimes(map){
 		console.log("orderCrimes: "+highestValue+"   "+map[highestValue]);
 		sortedData.push({highestValue: map[highestValue]});	
 		delete map[highestValue];
-		highestValue = ;
+		highestValue = undefined;
 		
 		if(sortedData.length == length){
 			break;
