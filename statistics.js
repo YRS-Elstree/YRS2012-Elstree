@@ -5,7 +5,7 @@ function generateGraphs(map) {
 	var totalCrimes = 0;
 	for(var cat in map){
 		console.log("Graphs: "+map[cat].count);
-		totalCrimes += cat.count;
+		totalCrimes += map[cat].count;
 	}
 	console.log("Total Crimes: "+totalCrimes);
 }
