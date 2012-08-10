@@ -42,5 +42,5 @@ function generateOutput(map, percentages){
 }
 
 function returnTableRow(map, percentages, index){
-	return "<tr><td class=\"crimeName\">"+map[index].crime+"</td><td><div class=\"bar\" width=\""+percentages[index]+"\">"+map[index].count+"</div></td></tr>";
+	return "<tr><td class=\"crimeName\">"+map[index].crime+"</td><td><div class=\"bar\" width=\""+percentages[index]+"%\">"+map[index].count+"</div></td></tr>";
 }
