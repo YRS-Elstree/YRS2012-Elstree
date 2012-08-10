@@ -39,6 +39,6 @@ function generateOutput(map, percentages){
 	output += "</table>";
 }
 
-function returnTableRow(map, percentage, index){
+function returnTableRow(map, percentages, index){
 	return "<tr><td class=\"crimeName\">"+map[index].crime+"</td><td><div class=\"bar\" width=\""+percentages[index]+"\"></div></td></tr>";
 }
