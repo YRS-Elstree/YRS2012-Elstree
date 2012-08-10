@@ -57,6 +57,7 @@ function dataReceivedForIndexPage(data) {
 	for(var crime in sortedMap){
 		console.log(sortedMap[crime]);
 	}
+	return sortedMap;
 }
 
 function mostCrimes(data, map){

@@ -13,6 +13,7 @@ a:active {color:#000000;}  /* selected link */
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript" src="geolocation.js"></script>
     <script type="text/javascript" src="dataJS.js"></script>
+	<script type="text/javascript" src="statistics.js"></script>
     <style type="text/css">
         <!--
         body {
@@ -132,7 +133,8 @@ a:active {color:#000000;}  /* selected link */
                 function (position) {
                     retrieveCrimesForPosition(position.coords, function (data, status) {
                         console.log(data);
-                        dataReceivedForIndexPage(data);
+                        var sortedMap = dataReceivedForIndexPage(data);
+						generateGraphs(sortedMap);
                     });
                     displayAddress(position.coords);
                 }
