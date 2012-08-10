@@ -5,7 +5,7 @@
 <style type="text/css">
 <!--
 body {
-	background-image: url(../Prototype%20One%20with%20styling/images/bg.jpg);
+	background-image: url(images/bg.jpg);
 }
 -->
 </style></head>
@@ -26,7 +26,18 @@ body {
 		<td>
 			<table width="288" height="242" border="0" background="images/index_04.png" cellspacing="0" cellpadding="0">
 			  <tr>
-			    <td>&nbsp;</td>
+			    <td>&nbsp; <p>In
+                    <span class="location" id='placename'> (searching ...)</span>
+                    during <span class="location data-crimemonth">---</span>, there have been
+                    <span class="location" id='crimecount'><b>(searching ...)</b></span>
+                    crimes. <br>
+                    <br>
+                    The most frequent crime was <span class="location" id="frequent">(searching ...)</span>. There were <span class="location" id="number">(searching ...)</span> arrests for all crimes in
+                    <span class="location data-crimemonth">---</span>.
+                    Despite this there were not many incidents of <span class="location" id="rare">(searching ...)</span>.
+                </p>
+
+                    <p><a href="/statistics.html">Want to know more?</a></p></td></td>
 		      </tr>
 		  </table></td>
 		<td>
@@ -38,5 +49,39 @@ body {
 	</tr>
 </table>
 <!-- End Save for Web Slices -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        startHere(
+                function (position) {
+                    retrieveCrimesForPosition(position.coords, function (data, status) {
+                        console.log(data);
+                        dataReceivedForIndexPage(data);
+                    });
+                    displayAddress(position.coords);
+                }
+        );
+    });
+</script>
+
+<script type="text/javascript">
+    var GoSquared = {};
+    GoSquared.acct = "GSN-955045-I";
+    (function (w) {
+        function gs() {
+            w._gstc_lt = +new Date;
+            var d = document, g = d.createElement("script");
+            g.type = "text/javascript";
+            g.src = "//d1l6p2sc9645hc.cloudfront.net/tracker.js";
+            var s = d.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(g, s);
+        }
+
+        w.addEventListener ?
+                w.addEventListener("load", gs, false) :
+                w.attachEvent("onload", gs);
+    })(window);
+</script>
+
+
 </body>
 </html>
