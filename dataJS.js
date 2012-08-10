@@ -1,3 +1,4 @@
+var crimeToEnglish;
 
 function callPoliceApi(url, success) {
     $.ajax(url, {
@@ -13,8 +14,12 @@ function retrieveCrimesForPosition(coords, success) {
     console.log(date);
 
     var url = "/api/crimes-street/all-crime?date=" + date + "&lat=" + coords.latitude + "&lng=" + coords.longitude;
-
-    callPoliceApi(url, success);
+	callPoliceApi(url, success);
+	
+	var englishUrl = "/api/crime-categories?date="+date;
+    callPoliceApi(englishUrl, function(data, status){
+		crimeToEnglish = data;
+	});
 }
 
 function countCrimes(data) {
@@ -43,18 +48,14 @@ function dataReceivedForIndexPage(data) {
 	mostCrimes(data, map);
 	leastCrimes(data, map);
 	
-	// Count arrests
-	var countArrests = 0;
+	countArrests(data);
 	
-	jQuery.each(data, function(index, crime){
-		var outcome = crime.outcome_status["category"];
-		console.log(outcome);
-		if(isGuilty(outcome)){
-			countArrests++;
-		}
-	});
-	console.log(countArrests);
-	$("#number").text(countArrests);
+	// Order crimes based on frequency
+	var sortedMap = orderCrimes(map);
+	console.log("sorted map");
+	for(var crime in sortedMap){
+		console.log(sortedMap[crime]);
+	}
 }
 
 function mostCrimes(data, map){
@@ -72,9 +73,21 @@ function mostCrimes(data, map){
 					highestValue = crime;
 				}
 			}
-			console.log(highestValue);
 	}
-	$("#frequent").text(highestValue);
+	$("#frequent").text( crimeName(highestValue) );
+}
+
+function countArrests(data){
+	var countArrests = 0;
+	
+	jQuery.each(data, function(index, crime){
+		var outcome = crime.outcome_status["category"];
+		if(isGuilty(outcome)){
+			countArrests++;
+		}
+	});
+	console.log(countArrests);
+	$("#number").text(countArrests);
 }
 
 function lastUpdated() {
@@ -86,7 +99,7 @@ function lastUpdated() {
             "July", "August", "September", "October", "November", "December" ];
         var monthName = monthNames[date.getMonth()];
         $(".data-crimemonth").text(monthName);
-        returnString = date.substring(0, 7);
+        returnString = data.date.substring(0, 7);
         console.log("Date: " + returnString);
     });
     return returnString;
@@ -113,7 +126,41 @@ function leastCrimes(data, map){;
 					lowestValue = crime;
 				}
 			}
-			console.log(lowestValue);
 	}
-	$("#rare").text(lowestValue);
+	$("#rare").text( crimeName(lowestValue) );
+}
+
+function crimeName(crimeID){
+	jQuery.each(crimeToEnglish, function(index, lookup){
+		if(lookup.url = crimeID){
+			return lookup.name;
+		}
+	});
+}
+
+function orderCrimes(map){
+	var sortedData = [];
+	var length = Object.keys(map).length;
+	
+	while(true){
+		var highestValue;
+		for(var crime in map){
+			if(highestValue == undefined || highestValue == null){
+				highestValue = crime;
+			}else{
+				if(map[crime] > map[highestValue]){
+					highestValue = crime;
+				}
+			}
+		}
+		console.log("orderCrimes: "+highestValue+"   "+map[highestValue]);
+		sortedData.push({highestValue: map[highestValue]});	
+		delete map[highestValue];
+		highestValue = undefined;
+		
+		if(sortedData.length == length){
+			break;
+		}
+	}
+	return sortedData;
 }
