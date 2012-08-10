@@ -133,14 +133,18 @@ function leastCrimes(data, map){;
 
 function crimeName(crimeID){
 	console.log("crimeToEnglish"+crimeToEnglish);
+	var name;
 	
 	jQuery.each(crimeToEnglish, function(index, lookup){
 		console.log("url: "+lookup["url"]);
 		console.log("name: "+lookup["name"]);
-		if(lookup.url = crimeID){
-			return lookup.name;
+		if(lookup["url"] == crimeID){
+			name = lookup["name"];
+			return;
 		}
 	});
+	
+	return name;
 }
 
 function orderCrimes(map){
