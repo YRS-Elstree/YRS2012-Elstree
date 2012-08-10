@@ -37,6 +37,8 @@ function generateOutput(map, percentages){
 		output += returnTableRow(map, percentages, i);
 	}
 	output += "</table>";
+	
+	return output;
 }
 
 function returnTableRow(map, percentages, index){
