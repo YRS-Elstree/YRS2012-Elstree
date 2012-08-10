@@ -137,8 +137,6 @@ function crimeName(crimeID){
 	var name;
 	
 	jQuery.each(crimeToEnglish, function(index, lookup){
-		console.log("url: "+lookup["url"]);
-		console.log("name: "+lookup["name"]);
 		if(lookup["url"] == crimeID){
 			name = lookup["name"];
 			return;
