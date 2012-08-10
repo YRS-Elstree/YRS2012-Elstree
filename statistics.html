@@ -1,13 +1,8 @@
 <html>
 <head>
-<title>CrimeViewer UK - YRS2012</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<style type="text/css">
-<!--
-body {
-	background-image: url(images/bg.jpg);
-}
--->
+    <title>Crimeviewer UK - YRS2012</title>
+    <link rel="stylesheet" href="statstyle.css"/>
+    <style type="text/css">
 a:link {color:#000000;}    /* unvisited link */
 a:visited {color:#000000;} /* visited link */
 a:hover {color:#000000;}   /* mouse over link */
@@ -22,8 +17,8 @@ a:active {color:#000000;}  /* selected link */
     <style type="text/css">
         <!--
         body {
- 
- 
+            background-image: url(images/bg.jpg);
+            background-repeat: repeat;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 18px;
         }
@@ -40,19 +35,24 @@ a:active {color:#000000;}  /* selected link */
 
 <body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 <!-- Save for Web Slices (crimeviewer.psd) -->
-<table width="321" height="461" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
-	<tr>
-		<td colspan="3">
-			<img src="images/index_01.png" width="321" height="85" alt=""></td>
-	</tr>
-	<tr>
-		<td colspan="3">
-			<img src="images/index_02.png" width="321" height="19" alt=""></td>
-	</tr>
-	<tr>
-		<td>
-			<img src="images/index_03.png" width="17" height="242" alt=""></td>
-		<td>
+<table width="322" height="385" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+    <tr>
+        <td colspan="6">
+            <img src="images/crimeviewer_01.png" width="321" height="9" alt=""></td>
+        <td>
+            <img src="images/spacer.gif" width="1" height="9" alt=""></td>
+    </tr>
+    <tr>
+        <td colspan="2" rowspan="2">
+            <img src="images/crimeviewer_02.png" width="27" height="23" alt=""></td>
+        <td>
+            <img src="images/crimeviewer_03.png" width="100%" height="9" alt=""></td>
+        <td colspan="3">
+            <img src="images/crimeviewer_04.png" width="141" height="9" alt=""></td>
+        <td>
+            <img src="images/spacer.gif" width="1" height="9" alt=""></td>
+    </tr>
+    <tr>
         <td colspan="2" rowspan="3">
             <table width="267" height="257" bgcolor="#FFFFFF" border="0" cellspacing="0" cellpadding="0">
                 <tr>
@@ -60,7 +60,7 @@ a:active {color:#000000;}  /* selected link */
                         <p>Crimes in
                             <span class="location" id='placename'> (searching ...)</span>
                              during the past month, <span class="location data-crimemonth">---</span>. 
-              <div id="crimeGraph"><table border="0" width="100%">
+              <div id="crimeGraph">  <table border="0" width="100%">
         <tr id= "stats">
             <td width="30%">Murder</td>
             <td><span class="a" style="display: inline-block; width: 100%;">100</span</td>
@@ -73,7 +73,7 @@ a:active {color:#000000;}  /* selected link */
             <td>Burglaries</td>
             <td><span class="c" style="display: inline-block; width: 50%;">50</span></td>
         </tr>
-    </table></div>
+    </table>
     <div id="navWrapper">
             <a href="/"><div class="navButton">
                 Back to Home Page
@@ -87,15 +87,46 @@ a:active {color:#000000;}  /* selected link */
                 </tr>
             </table>
         </td>
-		<td>
-			<img src="images/index_05.png" width="16" height="242" alt=""></td>
-	</tr>
-	<tr>
-		<td colspan="3">
-			<img src="images/index_06.png" width="321" height="115" alt=""></td>
-	</tr>
+        <td colspan="2">
+            <img src="images/crimeviewer_06.png" width="27" height="14" alt=""></td>
+        <td>
+            <img src="images/spacer.gif" width="1" height="14" alt=""></td>
+    </tr>
+    <tr>
+        <td rowspan="4">
+            <img src="images/crimeviewer_07.png" width="13" height="353" alt=""></td>
+        <td>
+            <img src="images/crimeviewer_08.png" width="14" height="100%" alt=""></td>
+        <td>
+            <img src="images/crimeviewer_09.png" width="17" height="100%" alt=""></td>
+        <td rowspan="4">
+            <img src="images/crimeviewer_10.png" width="10" height="353" alt=""></td>
+        <td>
+            <img src="images/spacer.gif" width="1" height="235" alt=""></td>
+    </tr>
+    <tr>
+        <td rowspan="3">
+            <img src="images/crimeviewer_11.png" width="14" height="118" alt=""></td>
+        <td rowspan="3">
+            <img src="images/crimeviewer_12.png" width="17" height="118" alt=""></td>
+        <td>
+            <img src="images/spacer.gif" width="1" height="8" alt=""></td>
+    </tr>
+    <tr>
+        <td>
+            <img src="images/crimeviewer_13.png" width="100%" height="47" alt=""></td>
+        <td rowspan="2">
+            <img src="images/crimeviewer_14.png" width="114" height="110" alt=""></td>
+        <td>
+            <img src="images/spacer.gif" width="1" height="47" alt=""></td>
+    </tr>
+    <tr>
+        <td>
+            <img src="images/crimeviewer_15.png" width="153" height="63" alt=""></td>
+        <td>
+            <img src="images/spacer.gif" width="1" height="63" alt=""></td>
+    </tr>
 </table>
-<!-- End Save for Web Slices -->
 <script type="text/javascript">
     $(document).ready(function () {
         startHere(
