@@ -162,9 +162,11 @@ function orderCrimes(map){
 			}
 		}
 		console.log("orderCrimes: "+highestValue+"   "+map[highestValue]);
-		sortedData.push({"count": map[highestValue]});	
+		sortedData.push({"crime": highestValue, "count": map[highestValue]});	
 		delete map[highestValue];
 		highestValue = undefined;
+		
+		console.log(sortedData[0]);
 		
 		if(sortedData.length == length){
 			break;
