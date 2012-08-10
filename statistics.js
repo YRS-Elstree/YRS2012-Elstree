@@ -1,5 +1,5 @@
 function generateGraphs(map) {
-	console("Graphs: "+map);
+	console.log("Graphs: "+map);
 	console.log("Starting grpahs");
 	var totalCrimes = 0;
 	for(var cat in map){
