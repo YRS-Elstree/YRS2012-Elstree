@@ -131,6 +131,7 @@ function leastCrimes(data, map){;
 }
 
 function crimeName(crimeID){
+	console.log("crimeToEnglish"+crimeToEnglish);
 	jQuery.each(crimeToEnglish, function(index, lookup){
 		if(lookup.url = crimeID){
 			return lookup.name;
