@@ -7,6 +7,8 @@ function generateGraphs(map) {
 	var output = generateOutput(map, percentages);
 	
 	console.log(output);
+	
+	$("#crimeGraph").text(output);
 }
 
 function getTotal(map){
@@ -32,11 +34,11 @@ function calculatePercentages(map, total){
 }
 
 function generateOutput(map, percentages){
-	var output = "<table>";
+	//var output = "<table width=\"267\" height=\"257\" bgcolor=\"#FFFFFF\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">";
 	for(var i = 0; i < percentages.length; i++){
 		output += returnTableRow(map, percentages, i);
 	}
-	output += "</table>";
+	//output += "</table>";
 	
 	return output;
 }
