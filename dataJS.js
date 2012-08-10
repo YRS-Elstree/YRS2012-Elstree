@@ -77,7 +77,7 @@ function mostCrimes(data, map){
 	$("#frequent").text( crimeName(highestValue) );
 }
 
-function countArrests(){
+function countArrests(data){
 	var countArrests = 0;
 	
 	jQuery.each(data, function(index, crime){
