@@ -74,7 +74,7 @@ function mostCrimes(data, map){
 				}
 			}
 	}
-	$("#frequent").text( crimeName(highestValue) );
+	$("#frequent").text(crimeName(highestValue));
 }
 
 function countArrests(data){
@@ -127,7 +127,7 @@ function leastCrimes(data, map){;
 				}
 			}
 	}
-	$("#rare").text( crimeName(lowestValue) );
+	$("#rare").text(crimeName(lowestValue));
 }
 
 function crimeName(crimeID){
