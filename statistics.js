@@ -9,7 +9,7 @@ function generateGraphs(map) {
 	console.log(output);
 	
 	//$("#crimeGraph").text(output);
-	document.getElementById("crimeGraph").innerHTML(output);
+	document.getElementById("crimeGraph").innerHTML = output;
 }
 
 function getTotal(map){
