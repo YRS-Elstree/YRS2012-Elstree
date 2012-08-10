@@ -1,4 +1,4 @@
-var crimeToEnglish;
+var crimeToEnglish = {};
 
 function callPoliceApi(url, success) {
     $.ajax(url, {
