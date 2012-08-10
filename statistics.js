@@ -24,7 +24,7 @@ function calculatePercentages(map, total){
 	
 	for(var i = 0; i < percentages.length; i++){
 		var percent = (map[i].count / total) * 100
-		percentages[i] = percent;
+		percentages[i] = Math.round(percent);
 		console.log("percent "+percent);
 	}
 	
