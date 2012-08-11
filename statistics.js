@@ -35,7 +35,7 @@ function calculatePercentages(map, total){
 }
 
 function generateOutput(map, percentages){
-	var output = "<table width=\"267\" height=\"257\" bgcolor=\"#FFFFFF\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">";
+	var output = "<table width=\"95%\" height=\"257\" bgcolor=\"#FFFFFF\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" >";
 	for(var i = 0; i < percentages.length; i++){
 		output += returnTableRow(map, percentages, i);
 	}

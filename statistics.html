@@ -15,6 +15,9 @@ body {
 }
 
 -->
+p {padding: 8px;
+	font-family: Arial, Helvetica, sans-serif;}
+
 </style>
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -41,11 +44,11 @@ body {
 			<table width="288" height="257" bgcolor="#FFFFFF" border="0" cellspacing="0" cellpadding="0">
                 <tr>
                     <td valign="top">
-                        <p>Crimes in
+                        <p class="contentWrapper">Crimes in
                             <span class="location" id='placename'> (searching ...)</span>
                              during the past month, <span class="location data-crimemonth">---</span>. 
-              <div id="crimeGraph"> <span class="location">(Loading crime data...)</span> </div>
-    <div id="navWrapper">
+              <div id="crimeGraph" style="padding: 8px"> <span class="location">(Loading crime data...)</span> </div>
+    <div id="navWrapper" style="padding: 8px">
             <a href="/"><div class="navButton">
                 Back to Home Page
             </div></a>
