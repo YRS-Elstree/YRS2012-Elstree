@@ -18,7 +18,6 @@ function retrieveCrimesForPosition(coords, success) {
 	
 	var englishUrl = "/api/crime-categories?date="+date;
     callPoliceApi(englishUrl, function(data, status){
-		console.log("englishURL: "+data);
 		crimeToEnglish = data;
 		
 		var url = "/api/crimes-street/all-crime?date=" + date + "&lat=" + coords.latitude + "&lng=" + coords.longitude;
@@ -43,11 +42,6 @@ function countCrimes(data) {
 
 function dataReceivedForIndexPage(data) {
     var map = countCrimes(data);
-    console.log("Map pre sorting:");
-	
-	for(var crime in map){
-		console.log(crime+"  "+map[crime]);
-	}
 
 	mostCrimes(data, map);
 	leastCrimes(data, map);
@@ -56,16 +50,12 @@ function dataReceivedForIndexPage(data) {
 	
 	// Order crimes based on frequency
 	var sortedMap = orderCrimes(map);
-	console.log("sorted map");
-	for(var crime in sortedMap){
-		console.log(sortedMap[crime]);
-	}
+	
 	return sortedMap;
 }
 
 function mostCrimes(data, map){
 	var length = Object.keys(data).length;
-	console.log("Length of map: "+length);
 	$("#crimecount").text(length);
 	
 	var highestValue;
@@ -91,21 +81,18 @@ function countArrests(data){
 			countArrests++;
 		}
 	});
-	console.log(countArrests);
 	$("#number").text(countArrests);
 }
 
 function lastUpdated() {
     var returnString;
     callPoliceApi("/api/crime-last-updated", function (data, status) {
-        console.log(data.date);
         var date = new Date(data.date);
         var monthNames = [ "January", "February", "March", "April", "May", "June",
             "July", "August", "September", "October", "November", "December" ];
         var monthName = monthNames[date.getMonth()];
         $(".data-crimemonth").text(monthName);
         returnString = data.date.substring(0, 7);
-        console.log("Date: " + returnString);
     });
     return returnString;
 }
@@ -136,7 +123,6 @@ function leastCrimes(data, map){;
 }
 
 function crimeName(crimeID){
-	console.log("crimeToEnglish"+crimeToEnglish);
 	var name;
 	
 	jQuery.each(crimeToEnglish, function(index, lookup){
@@ -164,7 +150,6 @@ function orderCrimes(map){
 				}
 			}
 		}
-		console.log("orderCrimes: "+highestValue+"   "+map[highestValue]);
 		sortedData.push({"crime": crimeName(highestValue), "count": map[highestValue]});	
 		delete map[highestValue];
 		highestValue = undefined;

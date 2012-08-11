@@ -2,23 +2,17 @@ function generateGraphs(map) {
 	var total = getTotal(map);
 	
 	var percentages = calculatePercentages(map, total);
-	console.log("Percentages: "+percentages);
 	
 	var output = generateOutput(map, percentages);
 	
-	console.log(output);
-	
-	//$("#crimeGraph").text(output);
 	document.getElementById("crimeGraph").innerHTML = output;
 }
 
 function getTotal(map){
 	var totalCrimes = 0;
 	for(var cat in map){
-		console.log("Graphs: "+map[cat].count);
 		totalCrimes += map[cat].count;
 	}
-	console.log("Total Crimes: "+totalCrimes);
 	
 	return totalCrimes;
 }
