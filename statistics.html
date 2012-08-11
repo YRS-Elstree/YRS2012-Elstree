@@ -45,7 +45,7 @@ p {padding: 8px;
 			<table width="288" height="257" bgcolor="#FFFFFF" border="0" cellspacing="0" cellpadding="0">
                 <tr>
                     <td valign="top">
-                        <p class="contentWrapper">Crimes in
+                        <p class="contentWrapper">Crimes near
                             <span class="location" id='placename'> (searching ...)</span>
                              during the past month, <span class="location data-crimemonth">---</span>. 
               <div id="crimeGraph" style="padding: 8px"> <span class="location">(Loading crime data...)</span> </div>
@@ -75,7 +75,6 @@ p {padding: 8px;
         startHere(
                 function (position) {
                     retrieveCrimesForPosition(position.coords, function (data, status) {
-                        console.log(data);
                         var sortedMap = dataReceivedForIndexPage(data);
 						generateGraphs(sortedMap);
                     });
