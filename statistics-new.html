@@ -1,0 +1,118 @@
+<html>
+<head>
+<title>CrimeViewer UK - YRS2012</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+body {
+	background-image: url(images/bg.jpg);
+}
+
+.location {
+    color: #06C;
+    font-size: 20px;
+    font-style: italic;
+}
+
+-->
+</style>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="geolocation.js"></script>
+    <script type="text/javascript" src="dataJS.js"></script>
+	<script type="text/javascript" src="statistics.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<!-- Save for Web Slices (crimeviewer.psd) -->
+<table width="321" height="461" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+	<tr>
+		<td colspan="3">
+			<img src="images/index_01.png" width="321" height="85" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			<img src="images/index_02.png" width="321" height="19" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/index_03.png" width="17" height="242" alt=""></td>
+		<td>
+			<table width="288" height="257" bgcolor="#FFFFFF" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td valign="top">
+                        <p>Crimes in
+                            <span class="location" id='placename'> (searching ...)</span>
+                             during the past month, <span class="location data-crimemonth">---</span>. 
+              <div id="crimeGraph">  <table border="0" width="100%">
+        <tr id= "stats">
+            <td width="30%">Murder</td>
+            <td><span class="a" style="display: inline-block; width: 100%;">100</span</td>
+        </tr>
+        <tr>
+            <td>Burglaries</td>
+            <td><span class="b" style="display: inline-block; width: 75%;">75</span></td>
+        </tr>
+        <tr>
+            <td>Burglaries</td>
+            <td><span class="c" style="display: inline-block; width: 50%;">50</span></td>
+        </tr>
+    </table>
+    <div id="navWrapper">
+            <a href="/"><div class="navButton">
+                Back to Home Page
+            </div></a>
+        </div>
+
+
+                    </p>
+
+                        </td>
+                </tr>
+            </table></td>
+		<td>
+			<img src="images/index_05.png" width="16" height="242" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			<img src="images/index_06.png" width="321" height="115" alt=""></td>
+	</tr>
+</table>
+<!-- End Save for Web Slices -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        startHere(
+                function (position) {
+                    retrieveCrimesForPosition(position.coords, function (data, status) {
+                        console.log(data);
+                        var sortedMap = dataReceivedForIndexPage(data);
+						generateGraphs(sortedMap);
+                    });
+                    displayAddress(position.coords);
+                }
+        );
+    });
+</script>
+
+<script type="text/javascript">
+    var GoSquared = {};
+    GoSquared.acct = "GSN-955045-I";
+    (function (w) {
+        function gs() {
+            w._gstc_lt = +new Date;
+            var d = document, g = d.createElement("script");
+            g.type = "text/javascript";
+            g.src = "//d1l6p2sc9645hc.cloudfront.net/tracker.js";
+            var s = d.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(g, s);
+        }
+
+        w.addEventListener ?
+                w.addEventListener("load", gs, false) :
+                w.attachEvent("onload", gs);
+    })(window);
+</script>
+
+
+</body>
+</html>
