@@ -5,7 +5,10 @@ function callPoliceApi(url, success) {
         username:"ficah53",
         password:"5d5faaa7ba76287f305755bbfe626dc7",
         dataType:"json",
-        success:success
+        success:success,
+		xhrFirelds: {
+			withCredentials: true
+		}
     });
 }
 
