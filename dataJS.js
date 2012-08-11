@@ -15,14 +15,14 @@ function callPoliceApi(url, success) {
 function retrieveCrimesForPosition(coords, success) {
     var date = lastUpdated();
     console.log(date);
-
-    var url = "/api/crimes-street/all-crime?date=" + date + "&lat=" + coords.latitude + "&lng=" + coords.longitude;
-	callPoliceApi(url, success);
 	
 	var englishUrl = "/api/crime-categories?date="+date;
     callPoliceApi(englishUrl, function(data, status){
 		console.log("englishURL: "+data);
 		crimeToEnglish = data;
+		
+		var url = "/api/crimes-street/all-crime?date=" + date + "&lat=" + coords.latitude + "&lng=" + coords.longitude;
+		callPoliceApi(url, success);
 	});
 }
 
